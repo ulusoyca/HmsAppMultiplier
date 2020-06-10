@@ -1,0 +1,29 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "com.ulusoyapps.navigations",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode":"1",
+        "activityPairs":[
+          {"from":"com.huawei.appmultiplierdemo.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityA"},
+          {"from":"com.huawei.appmultiplierdemo.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityB"},
+          {"from":"com.huawei.appmultiplierdemo.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityC"},
+          {"from":"com.ulusoyapps.navigations.main.ActivityA","to":"com.ulusoyapps.navigations.main.ActivityB"},
+          {"from":"com.ulusoyapps.navigations.main.ActivityB","to":"com.ulusoyapps.navigations.main.ActivityC"},
+          {"from":"com.ulusoyapps.navigations.main.ActivityC","to":"com.ulusoyapps.navigations.main.ActivityA"}
+        ],
+        "transActivities":[
+        ],
+        "defaultDualActivities":{
+          "mainPages":"com.huawei.appmultiplierdemo.MainActivity",
+          "relatedPage":"com.ulusoyapps.navigations.main.ActivityA"
+        }
+      }
+    }
+  ]
+}

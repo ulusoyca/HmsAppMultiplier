@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">App Multiplier</string>
+    <string name="activity_A">Activity A</string>
+    <string name="activity_B">Activity B</string>
+    <string name="activity_C">Activity C</string>
+    <string name="activity_D">Activity D</string>
+    <string name="activity_E">Activity E</string>
+    <string name="activity_F">Activity F</string>
+    <string name="title_topic_1">First Topic</string>
+    <string name="description_topic_1">First topic description</string>
+    <string name="title_navigation_bar_mode">Navigation Bar Mode</string>
+    <string name="description_navigation_bar_mode">The left screen always displays the app home screen, and the right screen displays the content based on operations on the left screen</string>
+    <string name="title_custom_mode">Custom Mode</string>
+    <string name="description_custom_mode">In this mode, developers can customize how the windows display by defining the activity pairs.</string>
+</resources>

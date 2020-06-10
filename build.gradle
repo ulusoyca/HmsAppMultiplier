@@ -1,0 +1,36 @@
+buildscript {
+    ext.kotlin_version = '1.3.72'
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url = uri("https://plugins.gradle.org/m2/") }
+        maven { url "https://maven.google.com" }
+        maven { url 'https://developer.huawei.com/repo/' } // HUAWEI Maven repository
+    }
+    dependencies {
+        def nav_version = "2.3.0-alpha06"
+        def agc_version = "1.2.1.301"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath("org.jmailen.gradle:kotlinter-gradle:2.3.2")
+        classpath "com.huawei.agconnect:agcp:$agc_version"  // HUAWEI agcp plugin
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://developer.huawei.com/repo/' } // HUAWEI Maven repository
+    }
+}
+
+apply from: "versions.gradle"
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
