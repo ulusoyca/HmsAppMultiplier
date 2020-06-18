@@ -16,8 +16,6 @@
 
 package com.ulusoyapps.navigations.main
 
-import androidx.annotation.StringRes
-
 interface TopicSelectedListener {
     fun onTopicSelectedWithActivityA()
     fun onTopicSelectedWithActivityB()

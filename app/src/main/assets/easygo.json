@@ -10,9 +10,9 @@
       "body": {
         "mode":"1",
         "activityPairs":[
-          {"from":"com.huawei.appmultiplierdemo.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityA"},
-          {"from":"com.huawei.appmultiplierdemo.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityB"},
-          {"from":"com.huawei.appmultiplierdemo.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityC"},
+          {"from":"com.ulusoyapps.navigations.main.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityA"},
+          {"from":"com.ulusoyapps.navigations.main.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityB"},
+          {"from":"com.ulusoyapps.navigations.main.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityC"},
           {"from":"com.ulusoyapps.navigations.main.ActivityA","to":"com.ulusoyapps.navigations.main.ActivityB"},
           {"from":"com.ulusoyapps.navigations.main.ActivityB","to":"com.ulusoyapps.navigations.main.ActivityC"},
           {"from":"com.ulusoyapps.navigations.main.ActivityC","to":"com.ulusoyapps.navigations.main.ActivityA"}

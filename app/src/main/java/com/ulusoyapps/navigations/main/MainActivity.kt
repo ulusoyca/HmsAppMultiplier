@@ -7,7 +7,7 @@ import com.ulusoyapps.navigations.R
 import com.ulusoyapps.navigations.databinding.ActivityMainBinding
 import com.ulusoyapps.navigations.main.epoxy.MainEpoxyController
 
-class MainActivity: AppCompatActivity(), TopicSelectedListener {
+class MainActivity : AppCompatActivity(), TopicSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -17,22 +17,22 @@ class MainActivity: AppCompatActivity(), TopicSelectedListener {
             description = R.string.description_navigation_bar_mode,
             image = android.R.drawable.zoom_plate,
             window1 = R.string.activity_A,
-            window1Action = {this@MainActivity.onTopicSelectedWithActivityA()},
+            window1Action = { this@MainActivity.onTopicSelectedWithActivityA() },
             window2 = R.string.activity_B,
-            window2Action = {this@MainActivity.onTopicSelectedWithActivityB()},
+            window2Action = { this@MainActivity.onTopicSelectedWithActivityB() },
             window3 = R.string.activity_C,
-            window3Action = {this@MainActivity.onTopicSelectedWithActivityC()}
+            window3Action = { this@MainActivity.onTopicSelectedWithActivityC() }
         ),
         Topic(
             title = R.string.title_custom_mode,
             description = R.string.description_custom_mode,
             image = android.R.drawable.zoom_plate,
             window1 = R.string.activity_D,
-            window1Action = {this@MainActivity.onTopicSelectedWithActivityD()},
+            window1Action = { this@MainActivity.onTopicSelectedWithActivityD() },
             window2 = R.string.activity_E,
-            window2Action = {this@MainActivity.onTopicSelectedWithActivityE()},
+            window2Action = { this@MainActivity.onTopicSelectedWithActivityE() },
             window3 = R.string.activity_F,
-            window3Action = {this@MainActivity.onTopicSelectedWithActivityF()}
+            window3Action = { this@MainActivity.onTopicSelectedWithActivityF() }
         )
     )
 
