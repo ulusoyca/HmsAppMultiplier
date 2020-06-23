@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity(), TopicSelectedListener {
         Topic(
             title = R.string.title_navigation_bar_mode,
             description = R.string.description_navigation_bar_mode,
-            image = android.R.drawable.zoom_plate,
+            image = R.drawable.preview_navigation_mode,
             window1 = R.string.activity_A,
             window1Action = { this@MainActivity.onTopicSelectedWithActivityA() },
             window2 = R.string.activity_B,
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity(), TopicSelectedListener {
         Topic(
             title = R.string.title_custom_mode,
             description = R.string.description_custom_mode,
-            image = android.R.drawable.zoom_plate,
+            image = R.drawable.preview_shopping_mode,
             window1 = R.string.activity_D,
             window1Action = { this@MainActivity.onTopicSelectedWithActivityD() },
             window2 = R.string.activity_E,

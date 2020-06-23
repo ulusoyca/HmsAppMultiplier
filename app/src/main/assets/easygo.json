@@ -10,20 +10,26 @@
       "body": {
         "mode":"1",
         "activityPairs":[
-          {"from":"com.ulusoyapps.navigations.main.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityA"},
-          {"from":"com.ulusoyapps.navigations.main.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityB"},
-          {"from":"com.ulusoyapps.navigations.main.MainActivity","to":"com.ulusoyapps.navigations.main.ActivityC"},
-          {"from":"com.ulusoyapps.navigations.main.ActivityA","to":"com.ulusoyapps.navigations.main.ActivityB"},
-          {"from":"com.ulusoyapps.navigations.main.ActivityB","to":"com.ulusoyapps.navigations.main.ActivityC"},
-          {"from":"com.ulusoyapps.navigations.main.ActivityC","to":"com.ulusoyapps.navigations.main.ActivityA"}
+          {"from":"com.ulusoyapps.navigations.main.MainActivity","to":"*"},
+
+          {"from":"com.ulusoyapps.navigations.main.ActivityD","to":"com.ulusoyapps.navigations.main.ActivityE"},
+          {"from":"com.ulusoyapps.navigations.main.ActivityD","to":"com.ulusoyapps.navigations.main.ActivityF"},
+
+          {"from":"com.ulusoyapps.navigations.main.ActivityE","to":"com.ulusoyapps.navigations.main.ActivityD"},
+          {"from":"com.ulusoyapps.navigations.main.ActivityE","to":"com.ulusoyapps.navigations.main.ActivityF"},
+
+          {"from":"com.ulusoyapps.navigations.main.ActivityF","to":"com.ulusoyapps.navigations.main.ActivityD"},
+          {"from":"com.ulusoyapps.navigations.main.ActivityF","to":"com.ulusoyapps.navigations.main.ActivityE"}
         ],
         "transActivities":[
-        ],
-        "defaultDualActivities":{
-          "mainPages":"com.huawei.appmultiplierdemo.MainActivity",
-          "relatedPage":"com.ulusoyapps.navigations.main.ActivityA"
+        ]
+      },
+      "Activities": [
+        {
+          "name": "com.ulusoyapps.navigations.main.MainActivity",
+          "defaultFullScreen": "true"
         }
-      }
+      ]
     }
   ]
 }
